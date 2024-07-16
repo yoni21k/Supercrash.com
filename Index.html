@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mine Predictor</h1>
+        <div class="mine-count-container">
+            <label for="mineCount">Cantidad de Minas a Evitar: </label>
+            <input type="number" id="mineCount" min="1" max="20" value="1">
+        </div>
+        <div class="grid">
+            <!-- Celdas del tablero -->
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+            <div class="cell" id="cell-9"></div>
+            <div class="cell" id="cell-10"></div>
+            <div class="cell" id="cell-11"></div>
+            <div class="cell" id="cell-12"></div>
+            <div class="cell" id="cell-13"></div>
+            <div class="cell" id="cell-14"></div>
+            <div class="cell" id="cell-15"></div>
+            <div class="cell" id="cell-16"></div>
+            <div class="cell" id="cell-17"></div>
+            <div class="cell" id="cell-18"></div>
+            <div class="cell" id="cell-19"></div>
+            <div class="cell" id="cell-20"></div>
+            <div class="cell" id="cell-21"></div>
+            <div class="cell" id="cell-22"></div>
+            <div class="cell" id="cell-23"></div>
+            <div class="cell" id="cell-24"></div>
+        </div>
+        <button id="predictButton">Predecir</button>
+        <button id="newGameButton">Nueva Partida</button>
+        <button id="winButton">Gané</button>
+        <button id="loseButton">Perdí</button>
+        <div id="result"></div>
+        <div class="effectiveness">
+            <div id="effectivenessMeter">
+                <div id="winPercentage"></div>
+                <div id="losePercentage"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
